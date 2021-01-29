@@ -2,4 +2,71 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+
+}
+.container, header, .header-socket, .container, .language, .login, .nav {
+  border: 1px solid #000;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.header-socket {
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  background-color: #F4F9FD;
+  border-bottom: 1px solid #000;
+  line-height: 70px;
+}
+.header-socket .container {
+  height: 100px;
+}
+.language {
+  float: left;
+  padding: 12px 5px;
+}
+.language span {
+  padding: 5px 10px;
+}
+.language span:first-child {
+  border-right: 1px solid #000;
+}
+.caret::after {
+  content: " \25bc";
+}
+.login {
+  float: right;
+  line-height: 97px;
+}
+.login > div {
+  margin-left: 20px;
+}
+.btn {
+  display: inline-block;
+  border-radius: 5px;
+  height: 45px;
+  line-height: 45px;
+  vertical-align: middle;
+  padding: 0 8px;
+}
+.btn i {
+  color: #00A4BD;
+}
+.bordered {
+  border: 2px solid #FE775A;
+  color: #FE775A;
+  height: 43px;
+  line-height: 43px;
+}
+.solid {
+  border: 2px solid #FE775A;
+  background-color: #FE775A;
+  color: #fff;
 }
