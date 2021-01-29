@@ -5,9 +5,9 @@
   font-family: 'Montserrat', sans-serif;
 
 }
-.container, header, .nav-logo, .nav-links, nav, .nav-logo img {
+/* .container {
   border: 1px solid #000;
-}
+} */
 .container {
   width: 70%;
   margin: 0 auto;
@@ -39,6 +39,7 @@
   padding: 5px 10px;
 }
 .language span:first-child {
+  padding-left: 0;
   border-right: 1px solid #000;
 }
 .fa-angle-down {
@@ -47,7 +48,6 @@
 .login {
   float: right;
   line-height: 97px;
-  font-weight: 600;
 }
 .login > div {
   margin-left: 20px;
@@ -81,7 +81,6 @@ nav {
 .nav-logo {
   display: inline-block;
   line-height: 100px;
-  padding-left: 10px;
 }
 .nav-logo img {
   vertical-align: middle;
@@ -104,13 +103,25 @@ nav {
   background-size: 100% 100%;
   height: calc(100vh - 200px);
 }
-.jumbo-text {
+.jumbo-title, .jumbo-desc, .jumbo-bottom-text {
   width: 50%;
 }
 .jumbo-title {
+  padding-top: 50px;
   font-size: 50px;
   font-weight: bold;
+  margin-bottom: 50px;
+}
+.jumbo-desc{
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+.jumbo-text > .btn {
+  height: 60px;
+  line-height: 60px;
+  padding: 0 20px;
 }
 .jumbo-bottom-text {
+  padding-top: 50px;
   font-size: 12px;
 }
