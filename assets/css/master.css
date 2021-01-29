@@ -5,11 +5,11 @@
   font-family: 'Montserrat', sans-serif;
 
 }
-.container, header, .header-socket, .container, .language, .login, .nav {
+.container, header, .nav-logo, .nav-links, nav, .nav-logo img {
   border: 1px solid #000;
 }
 .container {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 }
 .row:after {
@@ -24,11 +24,14 @@
   background-color: #F4F9FD;
   border-bottom: 1px solid #000;
   line-height: 70px;
+  z-index: 2;
+  float: left;
 }
 .header-socket .container {
   height: 100px;
 }
 .language {
+  font-weight: 600;
   float: left;
   padding: 12px 5px;
 }
@@ -70,4 +73,28 @@
   border: 2px solid #FE775A;
   background-color: #FE775A;
   color: #fff;
+}
+nav {
+  height: 100px;
+  margin-top: 100px;
+}
+.nav-logo {
+  display: inline-block;
+  line-height: 100px;
+  padding-left: 10px;
+}
+.nav-logo img {
+  vertical-align: middle;
+}
+.nav-links {
+  font-weight: 700;
+  float: right;
+  line-height: 100px;
+}
+.nav-links ul  {
+  display: inline-block;
+}
+.nav-links ul li {
+  display: inline-block;
+  padding-left: 40px;
 }
