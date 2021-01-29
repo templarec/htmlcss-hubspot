@@ -38,16 +38,17 @@
 .language span:first-child {
   border-right: 1px solid #000;
 }
-.caret::after {
-  content: " \25bc";
+.fa-angle-down {
+  font-size: 20px;
 }
 .login {
   float: right;
   line-height: 97px;
+  font-weight: 600;
 }
 .login > div {
   margin-left: 20px;
-}
+  }
 .btn {
   display: inline-block;
   border-radius: 5px;
