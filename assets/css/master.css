@@ -5,9 +5,17 @@
   font-family: 'Montserrat', sans-serif;
 
 }
-/* .container {
+[class^="crm-"] p, [class^="crm-"] li, .information .container,
+.information .row, .information .col-100, [class^="teaser-"]  {
   border: 1px solid #000;
-} */
+}
+[class^="col-"] {
+  float: left;
+  padding: 15px;
+}
+.col-100 {
+  width: 100%;
+}
 .container {
   width: 70%;
   margin: 0 auto;
@@ -16,6 +24,9 @@
   content: "";
   display: table;
   clear: both;
+}
+.bg-white {
+  background-color: #fff;
 }
 .header-socket {
   position: fixed;
@@ -102,6 +113,7 @@ nav {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: calc(100vh - 200px);
+  position: relative;
 }
 .jumbo-title, .jumbo-desc, .jumbo-bottom-text {
   width: 50%;
@@ -113,7 +125,7 @@ nav {
   margin-bottom: 50px;
 }
 .jumbo-desc{
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 50px;
 }
 .jumbo-text > .btn {
@@ -124,4 +136,51 @@ nav {
 .jumbo-bottom-text {
   padding-top: 50px;
   font-size: 12px;
+}
+.jumbo-bar {
+  height: 89px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  border-top: 3px solid #33475B;
+  border-bottom: 3px solid #33475B;
+  background-color: #AFEBE4;
+  z-index: 1;
+
+}
+.information {
+  background-color: #F4F9FD;
+  text-align: center;
+}
+.teaser-image img {
+  width: 25%;
+}
+.teaser-title, .teaser-text {
+  padding: 10px 0;
+}
+.teaser-title {
+  font-size: 30px;
+  font-weight: bold;
+}
+.teaser-text {
+  width: 70%;
+  font-weight: 600;
+  margin: 0 auto;
+}
+.crm-image {
+  float: left;
+  width: 30%;
+}
+.crm-image img {
+
+}
+.crm-text {
+  float: left;
+  width: 70%;
+}
+.crm-text ul {
+  display: inline-block;
+}
+.crm-text ul li {
+  display: inline-block;
 }
