@@ -5,17 +5,22 @@
   font-family: 'Montserrat', sans-serif;
   color: #33475B;
 }
-/* [class^="crm-"] p, [class^="crm-"] li, [class^="crm-"], .information .container,
-.information .row, .information .col-100, [class^="teaser-"],
-.crm-text span  {
+/* [class^="card-"], .col-33, .container, .row {
   border: 1px solid #000;
 } */
 [class^="col-"] {
   float: left;
-  padding: 15px;
 }
 .col-100 {
   width: 100%;
+}
+.col-33 {
+  width: calc((100% - 90px ) / 3);
+  background-color: #fff;
+  padding-bottom: 20px;
+}
+.ml-15 {
+  margin-left: 45px;
 }
 .container {
   width: 70%;
@@ -56,6 +61,9 @@
 }
 .fa-angle-down {
   font-size: 20px;
+}
+.fa-check-circle {
+  color: #FE775A;
 }
 .login {
   float: right;
@@ -170,9 +178,8 @@ nav {
   padding-bottom: 30px;
 }
 .round-corners {
-  border-radius: 5px;
-  border-style: ridge;
-  border-width: 2px;
+  border-radius: 7px;
+  box-shadow: 0 0 3px gray;
 }
 .crm-image {
   float: left;
@@ -223,9 +230,43 @@ nav {
   display: inline-block;
 }
 .crm-text ul li {
-  padding: 0 20px;
+  padding-right: 40px;
   display: inline-block;
 }
-.crm-text ul li i {
-  color: #FE775A;
+#features {
+  margin-top: 40px;
+}
+.card-img img {
+  height: 150px;
+}
+.card-img {
+  padding-top: 30px;
+}
+.card-title {
+  font-size: 25px;
+  font-weight: bold;
+  padding: 30px 0;
+}
+.card-text {
+  padding: 25px 15px;
+  margin: 0 auto;
+}
+.card-sep {
+  margin: 0 auto;
+  width: 80%;
+}
+.card-list {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px 0;
+  text-transform: uppercase;
+}
+.card-list ul {
+  text-transform: none;
+  text-align: left;
+  font-weight: normal;
+  font-size: 16px;
+  list-style: none;
+  padding: 20px 0;
+  padding-left: 30px;
 }
