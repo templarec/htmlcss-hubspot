@@ -7,10 +7,9 @@
 body {
   color: #33475B;
 }
-/* [class^="credits-"], .credits, .credits .container, .credits .row,
-.credits [class^="col-"]  {
-  border: 1px solid #000;
-} */
+[class^="socket-"], [class^="socket-"] img {
+  border: 1px solid #fff;
+}
 [class^="col-"] {
   float: left;
 }
@@ -27,6 +26,9 @@ body {
 }
 .col-60 {
   width: 60%;
+}
+.col-25 {
+  width: 25%;
 }
 .ml-45 {
   margin-left: 45px;
@@ -389,4 +391,55 @@ main {
 .woman-img img{
   float: right;
   width: 300px;
+}
+footer {
+  background-color: #32495B;
+  color: #CBD6E2;
+}
+footer a {
+  color: inherit;
+  text-decoration: inherit;
+}
+footer a:hover {
+  color: #fff;
+}
+footer ul {
+  list-style: none;
+  padding-top: 20px;
+}
+footer ul li {
+  padding: 10px;
+}
+footer ul li:first-child {
+  color: #fff;
+  font-weight: bold;
+  padding-bottom: 25px;
+}
+.btn-contact {
+  margin-top: 5px;
+  background-color: #DADEE0;
+  color: #32495B;
+  font-weight: 600;
+
+}
+#social li {
+  color: #CBD6E2;
+  display: inline-block;
+}
+.languages-bar {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+
+}
+#languages li {
+  color: #CBD6E2;
+  font-weight: normal;
+  display: inline-block;
+}
+.socket-logo {
+  float: left;
+}
+.socket-text {
+  float: right;
 }
