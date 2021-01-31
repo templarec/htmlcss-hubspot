@@ -3,12 +3,13 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
-
+  color: #33475B;
 }
-[class^="crm-"] p, [class^="crm-"] li, .information .container,
-.information .row, .information .col-100, [class^="teaser-"]  {
+/* [class^="crm-"] p, [class^="crm-"] li, [class^="crm-"], .information .container,
+.information .row, .information .col-100, [class^="teaser-"],
+.crm-text span  {
   border: 1px solid #000;
-}
+} */
 [class^="col-"] {
   float: left;
   padding: 15px;
@@ -166,21 +167,65 @@ nav {
   width: 70%;
   font-weight: 600;
   margin: 0 auto;
+  padding-bottom: 30px;
+}
+.round-corners {
+  border-radius: 5px;
+  border-style: ridge;
+  border-width: 2px;
 }
 .crm-image {
   float: left;
   width: 30%;
+  padding: 50px;
+}
+.crm-image > div {
+  display: block;
+  width: 150px;
+  margin: 0 auto;
 }
 .crm-image img {
-
+  width: 150px;
 }
 .crm-text {
   float: left;
-  width: 70%;
+  width: 60%;
+  text-align: left;
+  padding-top: 45px;
+  padding-left: 100px;
+  font-weight: 600;
+}
+.crm-text p:nth-child(3){
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  text-transform: uppercase;
+}
+.crm-text span {
+  float: right;
+  width: 60%;
+  line-height: 66px;
+}
+.crm-text hr {
+  width: 100%;
+  display: inline-block;
+  border: 1px solid #33475B;
+}
+.crm-text > p:not(.crm-title)  {
+  padding: 20px 0;
+
+}
+.crm-title {
+  font-size: 25px;
+  font-weight: 600;
 }
 .crm-text ul {
   display: inline-block;
 }
 .crm-text ul li {
+  padding: 0 20px;
   display: inline-block;
+}
+.crm-text ul li i {
+  color: #FE775A;
 }
