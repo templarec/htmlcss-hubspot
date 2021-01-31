@@ -7,9 +7,9 @@
 body {
   color: #33475B;
 }
-[class^="socket-"], [class^="socket-"] img {
+/* [class^="socket-"], [class^="socket-"] img {
   border: 1px solid #fff;
-}
+} */
 [class^="col-"] {
   float: left;
 }
@@ -41,6 +41,9 @@ body {
 }
 .pt-15 {
   padding-top: 15px;
+}
+.ptb-40 {
+  padding: 40px 0;
 }
 .container {
   width: 70%;
@@ -440,6 +443,12 @@ footer ul li:first-child {
 .socket-logo {
   float: left;
 }
+.socket-logo > div {
+  font-weight: bold;
+}
 .socket-text {
   float: right;
+}
+.socket-text span {
+  padding-left: 20px;
 }
