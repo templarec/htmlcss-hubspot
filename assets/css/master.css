@@ -1,3 +1,4 @@
+/* PROPRIETA' GENERALI */
 * {
   margin: 0;
   padding: 0;
@@ -7,9 +8,20 @@
 body {
   color: #33475B;
 }
-/* [class^="socket-"], [class^="socket-"] img {
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+.nav-links a:hover, .language a:hover,
+.login i:hover {
+  color: #FE775A;
+}
+/* ------------ DEBUG BORDERS */
+/* #social, #social li {
   border: 1px solid #fff;
 } */
+/*--------- END DEBUG BORDERS */
+/* IMPOSTAZIONE COLONNE */
 [class^="col-"] {
   float: left;
 }
@@ -30,6 +42,7 @@ body {
 .col-25 {
   width: 25%;
 }
+/* UTILITY MARGIN E PADDING */
 .ml-45 {
   margin-left: 45px;
 }
@@ -45,6 +58,10 @@ body {
 .ptb-40 {
   padding: 40px 0;
 }
+.bg-white {
+  background-color: #fff;
+}
+/* CLEARFIX E CONTAINER */
 .container {
   width: 70%;
   margin: 0 auto;
@@ -54,9 +71,7 @@ body {
   display: table;
   clear: both;
 }
-.bg-white {
-  background-color: #fff;
-}
+/* HEADER */
 .header-socket {
   position: fixed;
   height: 100px;
@@ -95,6 +110,7 @@ body {
 .login > div {
   margin-left: 20px;
   }
+/* CLASSI PER BOTTONI */
 .btn {
   display: inline-block;
   border-radius: 5px;
@@ -110,7 +126,7 @@ body {
   border: 2px solid #FE775A;
   color: #FE775A;
   height: 43px;
-  line-height: 43px;
+  line-height: 41px;
 }
 .solid {
   border: 2px solid #FE775A;
@@ -121,6 +137,7 @@ body {
   height: 50px;
   line-height: 50px;
 }
+/* NAV */
 nav {
   height: 100px;
   margin-top: 100px;
@@ -144,9 +161,13 @@ nav {
   display: inline-block;
   padding-left: 40px;
 }
+/* FINE HEADER */
+/* -------------------- */
+/* MAIN */
 main {
   background-color: #F4F9FD;
 }
+/* INZIO JUMBO */
 .jumbo {
   background-image: url('../img/jumbotron.png');
   background-repeat: no-repeat;
@@ -187,8 +208,11 @@ main {
   z-index: 1;
 
 }
+/* FINE JUMBO */
+/* SEZIONE CENTRALE */
 .information {
   text-align: center;
+  margin-top: 40px;
 }
 .teaser-image img {
   width: 25%;
@@ -222,6 +246,7 @@ main {
 }
 .crm-image img {
   width: 150px;
+  padding-bottom: 20px;
 }
 .crm-text {
   float: left;
@@ -299,6 +324,7 @@ main {
   padding: 20px 0;
   padding-left: 30px;
 }
+/* SEZIONE GRIGLIA COUNTERS */
 .counters {
   margin-top: 40px;
   padding-bottom: 40px;
@@ -317,6 +343,7 @@ main {
   font-size: 18px;
   font-weight: 700;
 }
+/* UTILITY GRIGLIA */
 .bb-1 {
   border-bottom: 1px solid #fff;
 }
@@ -344,6 +371,7 @@ main {
   padding: 15px;
   font-size: 15px;
 }
+/* SEZIONE CREDITS */
 .credits {
   background-color: #fff;
   padding-top: 40px;
@@ -395,6 +423,7 @@ main {
   float: right;
   width: 300px;
 }
+/* FOOTER */
 footer {
   background-color: #32495B;
   color: #CBD6E2;
@@ -423,12 +452,19 @@ footer ul li:first-child {
   background-color: #DADEE0;
   color: #32495B;
   font-weight: 600;
-
+}
+#contact-btn:hover {
+  color: #32495B;
+  background-color: #DADEE0;
+}
+#social {
+  padding-left: 20px;
 }
 #social li {
   color: #CBD6E2;
   display: inline-block;
 }
+/* SOCKET LINGUE */
 .languages-bar {
   width: 80%;
   margin: 0 auto;
@@ -440,6 +476,7 @@ footer ul li:first-child {
   font-weight: normal;
   display: inline-block;
 }
+/* SOCKET LOGO COPYRIGHT & PRIVACY */
 .socket-logo {
   float: left;
 }
